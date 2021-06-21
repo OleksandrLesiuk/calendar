@@ -1,0 +1,11 @@
+i {
+  font-size: 2rem;
+  display: flex;
+}
+
+@media screen and (max-width: 400px) {
+  i {
+    display: inline-block;
+    max-width: 50px;
+  }
+}

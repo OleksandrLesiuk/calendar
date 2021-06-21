@@ -1,0 +1,7 @@
+<div class="backdrop">
+  <div class="popup">
+    <i class="material-icons popup__close-btn" (click)="close()">close</i>
+    <input type="text" [value]="date | moment: 'MMMM'" />
+    <input type="text" [value]="date | moment: 'dddd'" />
+  </div>
+</div>
