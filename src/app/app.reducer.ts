@@ -8,8 +8,8 @@ export interface State {
 }
 
 const initialState: State = {
-  isPopupOpened: false,
-  date: moment().locale('ru'),
+  isPopupOpened: true,
+  date: moment(),
 };
 
 // export function appReducer(state = initialState, action: PopupActions) {

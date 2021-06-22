@@ -1,12 +1,10 @@
 <div class="wrapper">
   <app-header></app-header>
-  <div class="container">
-    <main>
-      <router-outlet></router-outlet>
-    </main>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
 
-    <div *ngIf="isPopupOpened">
-      <app-popup></app-popup>
-    </div>
+  <div *ngIf="isPopupOpened">
+    <app-popup></app-popup>
   </div>
 </div>

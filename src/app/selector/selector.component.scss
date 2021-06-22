@@ -1,19 +1,21 @@
 .selector {
-  margin: 1rem;
-}
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  padding: 13px 0;
+  margin-bottom: 1rem;
 
-p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-  span {
-    margin: 0 2rem;
-    text-align: center;
-    width: 200px;
-  }
+    span {
+      margin: 0 2rem;
+      text-align: center;
+    }
 
-  i {
-    cursor: pointer;
+    i {
+      cursor: pointer;
+    }
   }
 }

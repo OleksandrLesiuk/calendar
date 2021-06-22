@@ -13,8 +13,6 @@ import { HeaderComponent } from './header/header.component';
 import { LogoComponent } from './logo/logo.component';
 import { MenuComponent } from './menu/menu.component';
 import { CalendarPageComponent } from './calendar-page/calendar-page.component';
-import { AboutPageComponent } from './about-page/about-page.component';
-import { FormPageComponent } from './form-page/form-page.component';
 
 @NgModule({
   declarations: [
@@ -27,8 +25,6 @@ import { FormPageComponent } from './form-page/form-page.component';
     LogoComponent,
     MenuComponent,
     CalendarPageComponent,
-    AboutPageComponent,
-    FormPageComponent,
   ],
   imports: [
     BrowserModule,

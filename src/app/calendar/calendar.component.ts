@@ -1,5 +1,4 @@
 import { Store } from '@ngrx/store';
-// import { DateService } from './../shared/date.service';
 import { Component, OnInit } from '@angular/core';
 import * as moment from 'moment';
 import * as fromApp from '../app.reducer';
@@ -67,7 +66,6 @@ export class CalendarComponent implements OnInit {
   }
 
   select(day: moment.Moment) {
-    // this.store.dispatch({ type: 'CHANGE_DATE', payload: { day } });
     this.store.dispatch(new calendar.ChangeDate({ day }));
 
     this.store.dispatch(new popup.OpenPopup());

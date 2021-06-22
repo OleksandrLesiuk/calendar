@@ -1,36 +1,49 @@
-table {
-  // width: 100%;
+.calendar {
   max-width: 400px;
-  margin: 0 auto;
-  margin-bottom: 1rem;
-  border-collapse: collapse;
+  text-transform: uppercase;
 
-  td,
-  th {
-    border: 1px solid #000;
-    padding: 0.5rem 1rem;
+  &__day-names {
+    margin-top: 1rem;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
   }
 
-  td {
-    text-align: center;
-    transition: all 0.2s;
+  table {
+    width: 100%;
+    border-collapse: collapse;
 
-    &.disabled {
-      opacity: 0.5;
+    td,
+    th {
+      width: 60px;
+      height: 60px;
     }
 
-    &:hover:not(.disabled) {
-      background: #eee;
-      cursor: pointer;
+    td {
+      text-align: center;
+      transition: all 0.2s;
+
+      &.disabled {
+        opacity: 0.5;
+      }
+
+      &:hover:not(.disabled) {
+        background: #eee;
+        color: var(--dark-color);
+        cursor: pointer;
+      }
     }
-  }
 
-  .active {
-    color: var(--primary-color);
-    font-weight: bold;
-  }
+    // .active {
+    //   background-color: var(--primary-color);
+    // }
 
-  .selected {
-    color: blue;
+    .selected {
+      color: var(--dark-color);
+      background-color: var(--primary-color);
+    }
   }
 }

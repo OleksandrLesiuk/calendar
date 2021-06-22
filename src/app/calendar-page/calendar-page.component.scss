@@ -1,0 +1,51 @@
+.hero {
+  display: flex;
+  height: calc(100vh - var(--header-height));
+
+  &__img {
+    background-image: url("../../assets/bg1.png");
+    background-size: cover;
+    flex: 1;
+    padding: 12rem 2rem;
+  }
+
+  &__title {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: bold;
+    max-width: 532px;
+    line-height: 1.6;
+    text-align: right;
+    margin-left: auto;
+  }
+
+  &__description {
+    color: #dfdfdf;
+    text-align: right;
+    font-size: 30px;
+    line-height: 1.6;
+    max-width: 465px;
+    margin-left: auto;
+  }
+
+  &__calendar {
+    width: 36%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--dark-color);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hero {
+    flex-direction: column;
+
+    &__calendar {
+      width: 100%;
+    }
+  }
+}
